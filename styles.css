@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+  background-color: #282c33;
+  color: #abb2bf;
+  text-align: center;
+}
+
+h3 {
+  color: #c778dd;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span {
+  font-weight: bold;
+}
+
+header {
+  top: 0;
+  position: sticky;
+  padding: 10px 0;
+  background-color: #c778dd;
+  color: #282c33;
+  z-index: 1000;
+}
+
+section {
+  margin: 2.5rem 0;
+}
+
+.profile-img {
+  width: 60%;
+  max-width: 280px;
+  margin: 0 0 1rem;
+  border-radius: 50%;
+}
+
+.pg-width {
+  width: 60%;
+  margin: 0 auto;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+tr th {
+  background-color: #c778dd;
+  color: #282c33;
+}
+tr th,
+tr td {
+  padding: 10px;
+  text-align: left;
+}
+.col_1 {
+  width: 20%;
+}
+.col_2 {
+  width: 40%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.grid-item {
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  background-color: #abb2bf;
+  color: #282c33;
+}
+
+footer {
+  padding: 10px 0;
+  background-color: #c778dd;
+  color: #282c33;
+}
+.soical-icons {
+  margin: 1rem 0 0;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .grid-container {
+    grid-template-columns: auto;
+    grid-row: inherit;
+  }
+}
